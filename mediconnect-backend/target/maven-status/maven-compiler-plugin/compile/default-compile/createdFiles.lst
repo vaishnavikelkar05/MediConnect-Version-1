@@ -1,0 +1,10 @@
+com\mediconnect\entity\Blood.class
+com\mediconnect\repository\BloodRepository.class
+com\mediconnect\controller\BloodController.class
+com\mediconnect\MediconnectApplication.class
+com\mediconnect\service\BloodService.class
+com\mediconnect\entity\Hospital.class
+com\mediconnect\entity\Doctor.class
+com\mediconnect\service\DoctorService.class
+com\mediconnect\controller\TestController.class
+com\mediconnect\repository\DoctorRepository.class
