@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MediConnect 🏥
 
 A production-ready full-stack healthcare web application for Kolhapur, Maharashtra.
@@ -181,3 +182,7 @@ Includes 15 real hospitals:
 ## Emergency
 
 For medical emergencies in Kolhapur: **Call 108**
+=======
+# MediConnect-Version-1
+MediConnect is a full-stack healthcare web application that helps users find nearby hospitals, check blood availability, view doctor availability, get specialist recommendations based on symptoms, and access emergency healthcare services. Built using React, Java Spring Boot, and MySQL with a clean and responsive UI.
+>>>>>>> 275b0b5bcf86eff7c7db5c11cbaf4afe12f20e1f
