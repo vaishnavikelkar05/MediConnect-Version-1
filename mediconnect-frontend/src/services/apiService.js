@@ -37,4 +37,26 @@ export const getBlood = (group = '', hospitalId = null) => {
 export const recommendSpecialist = (symptom) =>
   api.post('/recommend-specialist', { symptom });
 
+// Emergency
+export const triageEmergency = (payload) =>
+  api.post('/emergency/triage', payload);
+
+export const recommendEmergencyDoctor = (payload) =>
+  api.post('/emergency/appointments/recommend', payload);
+
+export const bookEmergencyAppointment = (payload) =>
+  api.post('/emergency/appointments', payload);
+
+export const recommendAmbulance = (payload) =>
+  api.post('/emergency/ambulances/recommend', payload);
+
+export const getBedAvailability = () =>
+  api.get('/emergency/beds');
+
+export const getEmergencyRoute = (params) =>
+  api.get('/emergency/route', { params });
+
+export const syncOfflineEmergency = (payload) =>
+  api.post('/emergency/offline-sync', payload);
+
 export default api;

@@ -28,4 +28,20 @@ public class Hospital {
 
     @Column(length = 20)
     private String contact;
+
+    private Boolean emergencySupported;
+
+    private Integer icuBedsAvailable;
+
+    private Integer generalBedsAvailable;
+
+    private Integer emergencyBedsAvailable;
+
+    private Integer traumaBedsAvailable;
+
+    private Boolean traumaSupport;
+
+    private Boolean cardiacSupport;
+
+    private Boolean neurologySupport;
 }

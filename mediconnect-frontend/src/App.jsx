@@ -6,6 +6,7 @@ import Hospitals from './pages/Hospitals';
 import Doctors from './pages/Doctors';
 import BloodBank from './pages/BloodBank';
 import Recommend from './pages/Recommend';
+import Emergency from './pages/Emergency';
 import './App.css';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path="/doctors" element={<Doctors />} />
             <Route path="/blood-bank" element={<BloodBank />} />
             <Route path="/recommend" element={<Recommend />} />
+            <Route path="/emergency" element={<Emergency />} />
           </Routes>
         </main>
         <Footer />

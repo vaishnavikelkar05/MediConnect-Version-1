@@ -22,6 +22,14 @@ public class Doctor {
     @Column(length = 100)
     private String specialization;
 
+    private Float rating;
+
+    private Float reliabilityScore;
+
+    private Integer yearsExperience;
+
+    private Boolean emergencySupported;
+
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "hospital_id")
     private Hospital hospital;

@@ -13,6 +13,7 @@ const Navbar = () => {
     { path: '/doctors', label: 'Doctors' },
     { path: '/blood-bank', label: 'Blood Bank' },
     { path: '/recommend', label: 'Find Specialist' },
+    { path: '/emergency', label: 'Emergency' },
   ];
 
   const isActive = (path) => location.pathname === path;
@@ -38,7 +39,7 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
-          <Link to="/recommend" className="nav-cta" onClick={() => setMenuOpen(false)}>
+          <Link to="/emergency" className="nav-cta" onClick={() => setMenuOpen(false)}>
             Get Help Now
           </Link>
         </div>
