@@ -1,0 +1,236 @@
+.blood-group-pills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.blood-pill {
+  padding: 6px 16px;
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1.5px solid var(--gray-200);
+  background: white;
+  color: var(--gray-600);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.blood-pill:hover {
+  border-color: var(--red);
+  color: var(--red);
+  background: var(--red-light);
+}
+
+.blood-pill.active {
+  background: var(--red);
+  color: white;
+  border-color: var(--red);
+}
+
+.filter-select-plain {
+  padding: 12px 16px;
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  background: white;
+  color: var(--gray-700);
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s;
+  min-width: 200px;
+}
+
+.filter-select-plain:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Summary View */
+.blood-summary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.blood-hospital-card {
+  background: white;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  transition: all 0.25s;
+}
+
+.blood-hospital-card:hover {
+  border-color: var(--red);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.blood-hospital-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.blood-hospital-header h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--gray-900);
+}
+
+.blood-groups-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.blood-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 8px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid;
+  text-align: center;
+}
+
+.blood-unit-high {
+  background: #F0FDF4;
+  border-color: #86EFAC;
+}
+
+.blood-unit-medium {
+  background: #FFFBEB;
+  border-color: #FCD34D;
+}
+
+.blood-unit-low {
+  background: var(--red-light);
+  border-color: #FCA5A5;
+}
+
+.blood-group-label {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--gray-900);
+}
+
+.blood-units {
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-top: 4px;
+}
+
+.blood-unit-high .blood-units { color: var(--green-dark); }
+.blood-unit-medium .blood-units { color: #D97706; }
+.blood-unit-low .blood-units { color: var(--red); }
+
+.blood-units-label {
+  font-size: 0.65rem;
+  color: var(--gray-400);
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+/* List View */
+.blood-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.blood-list-item {
+  background: white;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.2s;
+}
+
+.blood-list-item:hover {
+  border-color: var(--red);
+  box-shadow: var(--shadow-md);
+}
+
+.blood-group-badge {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.blood-group-badge-high { background: #F0FDF4; color: var(--green-dark); border: 2px solid #86EFAC; }
+.blood-group-badge-medium { background: #FFFBEB; color: #D97706; border: 2px solid #FCD34D; }
+.blood-group-badge-low { background: var(--red-light); color: var(--red); border: 2px solid #FCA5A5; }
+
+.blood-list-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.blood-hospital-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-bottom: 4px;
+}
+
+.blood-hospital-address {
+  font-size: 0.8rem;
+  color: var(--gray-500);
+}
+
+.blood-availability {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.availability-badge {
+  padding: 4px 10px;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.availability-high { background: #F0FDF4; color: var(--green-dark); }
+.availability-medium { background: #FFFBEB; color: #D97706; }
+.availability-low { background: var(--red-light); color: var(--red); }
+
+.units-count {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--gray-700);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .blood-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .blood-groups-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .blood-groups-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
